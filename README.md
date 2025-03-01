@@ -1,4 +1,4 @@
-# Image Classifier
+# Dual-Framework Image Classifier
 
 ![Demo Image](./demo-image.png)
 
@@ -53,6 +53,45 @@ http://127.0.0.1:5000
 
 4. View the comparison results from both frameworks along with detailed visualizations.
 
+## Testing
+
+The application includes a comprehensive test suite located in the `/tests` directory.
+
+### Test Structure
+- `tests/test_models.py`: Tests for the TensorFlow and PyTorch classifier models
+- `tests/test_app.py`: Integration tests for the Flask application routes
+
+### Running Tests
+
+1. Install testing dependencies:
+```bash
+pip install pytest pillow
+```
+
+2. Run all tests from the project root:
+```bash
+python -m pytest tests/
+```
+
+3. For more detailed test output:
+```bash
+python -m pytest -xvs tests/
+```
+
+### Optional: Create a Test Runner Script
+
+For convenience, you can create a bash script to run tests:
+```bash
+echo '#!/bin/bash
+python -m pytest -xvs tests/' > run_tests.sh
+chmod +x run_tests.sh
+```
+
+Then run tests with:
+```bash
+./run_tests.sh
+```
+
 ## Dependencies
 - Flask: Web application framework
 - TensorFlow: Deep learning framework for MobileNetV2 model
@@ -61,3 +100,4 @@ http://127.0.0.1:5000
 - Pillow: Image processing library
 - NumPy: Numerical computing library
 - Chart.js: JavaScript library for creating visualizations (loaded via CDN)
+- pytest: Testing framework (for development)
