@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+/* Change primary header from blue to orange */
+.bg-primary {
+  background-color: #FF7F00 !important;
+}
+
+/* Change success header from green to black */
+.bg-success {
+  background-color: #212121 !important;
+}
+
+.btn-primary {
+  background-color: #FF7F00;
+  border-color: #FF7F00;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #E67300;
+  border-color: #E67300;
+}
+
+.spinner-border.text-primary {
+  color: #FF7F00 !important;
+}
+
+.result-card {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.prediction-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#preview-image {
+  max-width: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.chart-container {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.confidence-bar {
+  height: 20px;
+  background-color: #FF7F00;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.insights-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #FF7F00;
+}
+
+/* Updating alert colors for insights */
+.alert-success {
+  background-color: rgba(255, 127, 0, 0.1);
+  border-color: #FF7F00;
+  color: #333;
+}
+
+.alert-warning {
+  background-color: rgba(255, 127, 0, 0.1);
+  border-color: #FF7F00;
+  color: #333;
+}
+
+.alert-info {
+  background-color: rgba(33, 33, 33, 0.05);
+  border-color: #212121;
+  color: #333;
+}
+
+.alert-primary {
+  background-color: rgba(255, 127, 0, 0.05);
+  border-color: #FF7F00;
+  color: #333;
+}
+
+/* Drop zone styles */
+.drop-zone {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.drop-zone--over {
+  border-color: #FF7F00;
+  background-color: rgba(255, 127, 0, 0.05);
+}
+
+.drop-zone__prompt {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.input-methods {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Chart colors - update to match theme */
+canvas#tensorflow-chart, 
+canvas#pytorch-chart, 
+canvas#comparison-chart {
+  --chart-color-1: rgba(255, 127, 0, 0.7);
+  --chart-border-1: rgba(255, 127, 0, 1);
+  --chart-color-2: rgba(33, 33, 33, 0.7);
+  --chart-border-2: rgba(33, 33, 33, 1);
+}
